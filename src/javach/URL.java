@@ -3,7 +3,7 @@ package javach;
 //use this to build urls
 public class URL {
 	
-	
+
 	static String api = "a.4cdn.org/";
 	static String html = "boards.4chan.org/"; //html subdomain
 	static String image = "i.4cdn.org/"; //images

@@ -19,7 +19,7 @@ public class Thread { //represents a 4chan thread
     private boolean bumpLimit = false;  //has it hit the bumplimit
     private boolean imageLimit = false; //has it hit the imagelimit
     
-    Post OriginalPost;		//the OP of the thread
+    private Post OriginalPost;		//the OP of the thread
 	
 	public Thread(String board, long id){
 	    this.id = id;
@@ -202,6 +202,10 @@ public class Thread { //represents a 4chan thread
 			}
 		}
 		return thumbnames;
+	}
+
+	public Post getOriginalPost() {
+		return OriginalPost;
 	}
 	
 	//URL accessors
